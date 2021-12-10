@@ -39,4 +39,7 @@ fun main() {
         println(solve(80).toLong())
         println(solve(256).toLong())
     }
+
+    
+
 }
