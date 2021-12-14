@@ -1,13 +1,14 @@
 import java.io.File
 import java.lang.Double.max
 
+
+val Pair<Int, Int>.x: Int
+    get() = this.first
+
+val Pair<Int, Int>.y: Int
+    get() = this.second
+
 class Day5 {
-
-    val Pair<Int, Int>.x: Int
-        get() = this.first
-
-    val Pair<Int, Int>.y: Int
-        get() = this.second
 
     private val lineSegments = File("inputs/Day5Input.txt").readLines().map {
         it.split(" -> ").let { linePair ->
